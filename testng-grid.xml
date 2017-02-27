@@ -1,0 +1,26 @@
+<suite name="TestSuite" parallel="tests">
+<test name="Chrome Test">
+<parameters>
+	<parameter name="platform" value="MAC" />
+	<parameter name="browser" value="chrome" />
+	<parameter name="version" value="55.0.2883.95" />
+	<parameter name="url" value="http://www.expedia.com" />
+</parameters>
+	<classes>
+		<class name="com.megha.SeleniumFramework.SeleniumFramework.SeleniumGrid_ParallelTestFramework">
+		</class>
+	</classes>
+</test>
+<test name="FireFox Test">
+<parameters>
+	<parameter name="platform" value="MAC" />
+	<parameter name="browser" value="firefox" />
+	<parameter name="version" value="51.0.1" />
+	<parameter name="url" value="http://www.expedia.com" />
+</parameters>
+	<classes>
+		<class name="com.megha.SeleniumFramework.SeleniumFramework.SeleniumGrid_ParallelTestFramework">
+		</class>
+	</classes>
+</test>
+</suite>

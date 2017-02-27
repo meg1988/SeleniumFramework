@@ -1,0 +1,94 @@
+<!-- <suite name="TestSuite">
+<test name="ExpediaSearchPage" preserve-order="true">
+<classes>
+	<class name="com.megha.SeleniumFramework.SeleniumFramework.TestNG_TestSuite">
+	<methods>
+		<include name="fillBasicInfo" />
+		<include name="fillAdvancedInfo" />
+	</methods>
+	</class>
+</classes>
+</test>
+</suite>
+ -->
+ 
+ <!-- <suite name="Grouping">
+ <test name = "TestNG Grouping">
+  <groups>
+ 	<run>
+ 		<include name="sedan"></include>
+ 		<include name="BMW"></include>		
+ 	</run>
+ </groups>
+ <classes>
+ 	<class name="com.megha.SeleniumFramework.SeleniumFramework.TestNG_Grouping"> 	
+ 	</class>
+ </classes>
+ </test>
+ </suite>
+  -->
+  
+ <!--   <suite name="testSuitDataProvider">
+ <test name = "TestNG Data Provider">
+  <parameter name = "origin" value="New York"/>
+  <parameter name = "destination" value="Chicago"/>
+  <parameter name = "departureDate" value="02/20/2017"/>
+  <parameter name = "returnDate" value="02/25/2017"/>
+ <classes>
+ 	<class name="com.megha.SeleniumFramework.SeleniumFramework.TestNG_ParametersAndDataProviders"> 	
+ 	<methods>
+ 		<include name ="searchFlightsWithMultipleOption"/>
+ 	</methods>
+ 	</class>
+ </classes>
+ </test>
+ </suite>
+ -->
+ 
+ <!-- <suite name="testSuiteMultipleBrowser" parallel="tests">
+ <test name = "TestNG Firefox">
+  <parameter name = "browserType" value="firefox"/>
+ <classes>
+ 	<class name="com.megha.SeleniumFramework.SeleniumFramework.TestNG_MultipleBrowsers_ParallelTests"> 	
+ 	<methods>
+ 		<include name ="searchFlightsWithMultipleOption"/>
+ 	</methods>
+ 	</class>
+ </classes>
+ </test>
+ <test name = "TestNG Chrome">
+  <parameter name = "browserType" value="chrome"/>
+ <classes>
+ 	<class name="com.megha.SeleniumFramework.SeleniumFramework.TestNG_MultipleBrowsers_ParallelTests"> 	
+ 	<methods>
+ 		<include name ="searchFlightsWithMultipleOption"/>
+ 	</methods>
+ 	</class>
+ </classes>
+ </test>
+ </suite>
+  -->
+  
+ <!--<suite name="TestSuite_Listener">
+<test name="Listener Test" preserve-order="true">
+<listeners>
+	<listener class-name = "utilities.SeleniumListeners"></listener>
+</listeners>
+<classes>
+	<class name="com.megha.SeleniumFramework.SeleniumFramework.TestNG_TestCase">
+	</class>	
+</classes>
+</test>
+</suite>
+  -->
+  
+<suite name="TestSuite_MultiThreading" parallel="classes" thread-count="2">
+<test name="MultiThreading Test" preserve-order="true">
+<classes>
+	<class name="com.megha.SeleniumFramework.SeleniumFramework.GoogleSearch_MultiThreading" />
+	<class name="com.megha.SeleniumFramework.SeleniumFramework.Expedia_MultiThreading" />
+</classes>
+</test>
+</suite>
+  
+  
